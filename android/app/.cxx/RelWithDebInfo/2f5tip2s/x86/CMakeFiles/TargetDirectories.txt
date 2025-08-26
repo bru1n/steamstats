@@ -1,0 +1,2 @@
+C:/Users/Michael/steam_api_app/android/app/.cxx/RelWithDebInfo/2f5tip2s/x86/CMakeFiles/edit_cache.dir
+C:/Users/Michael/steam_api_app/android/app/.cxx/RelWithDebInfo/2f5tip2s/x86/CMakeFiles/rebuild_cache.dir

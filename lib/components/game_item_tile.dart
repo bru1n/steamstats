@@ -70,12 +70,12 @@ class GameItemTile extends StatelessWidget {
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  lastPlayed != DateTime.fromMillisecondsSinceEpoch(0)
+                  playtimeForever != 0
                       ? Text('Total playtime: ${formatPlaytime(playtimeForever)}')
-                      : SizedBox(),
+                      : Text('No recorded activity'),
                   lastPlayed != DateTime.fromMillisecondsSinceEpoch(0)
                       ? Text('Last played: ${DateFormat('dd MMMM yyyy').format(lastPlayed)}')
-                      : Text('No recorded activity'),
+                      : SizedBox(),
                 ],
               ),
               trailing: Icon(isExpanded ? Icons.expand_less : Icons.expand_more),

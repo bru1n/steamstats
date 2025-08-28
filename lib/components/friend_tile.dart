@@ -25,7 +25,7 @@ class FriendTile extends StatelessWidget {
     if (lastLogOffDate != null) {
       return timeago.format(lastLogOffDate!);
     }
-    return '';
+    return 'Offline';
   }
 
   @override

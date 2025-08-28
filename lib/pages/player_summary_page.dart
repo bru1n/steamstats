@@ -252,14 +252,16 @@ class _PlayerSummaryPageState extends State<PlayerSummaryPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
+                      spacing: 5,
                       children: [
-                        Row(
+                        Wrap(
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          spacing: 5,
                           children: [
                             Text(
                               _playerSummary[0].personaName,
-                              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                             ),
-                            const SizedBox(width: 5),
                             FutureBuilder<int>(
                               future: _fetchSteamLevel(),
                               builder: (context, snapshot) {

@@ -76,8 +76,12 @@ class _RecentGameTileState extends State<RecentGameTile> {
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Last 2 weeks: ${formatPlaytime(widget.playtime2weeks)}'),
-                  Text('Total playtime: ${formatPlaytime(widget.playtimeForever)}')
+                  widget.playtime2weeks != 0
+                      ? Text('Last 2 weeks: ${formatPlaytime(widget.playtime2weeks)}')
+                      : SizedBox(),
+                  widget.playtimeForever != 0
+                      ? Text('Total playtime: ${formatPlaytime(widget.playtimeForever)}')
+                      : SizedBox(),
                 ],
               ),
               trailing: Icon(_isExpanded ? Icons.expand_less : Icons.expand_more),

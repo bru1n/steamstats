@@ -10,8 +10,8 @@ SteamStats is a Flutter application that fetches data from the official Steam AP
 - 📊 See stats in a visually appealing format  
 
 ## 🖼️ Screenshots
-- 
-- 
+<img width="2000" height="1000" alt="light" src="https://github.com/user-attachments/assets/371b0ee2-4864-4cba-8e6b-3087f8eb626a" />
+<img width="2000" height="1000" alt="dark" src="https://github.com/user-attachments/assets/0cc71d4d-a081-4a08-b4a3-bdbf2d75d943" />
 
 ## 🛠️ Tech Stack
 - **Flutter** – UI framework  

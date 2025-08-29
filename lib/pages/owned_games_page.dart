@@ -176,15 +176,17 @@ class _OwnedGamesPageState extends State<OwnedGamesPage> {
                               ),
                               PopupMenuDivider(height: 2),
                               PopupMenuItem(
-                                child: Text('Date'),
-                                onTap: () {
-                                  _sortItems('Date');
-                                },
-                              ),
-                              PopupMenuItem(
                                 child: Text('Hours'),
                                 onTap: () {
                                   _sortItems('Time');
+                                },
+                              ),
+                              PopupMenuItem(
+                                enabled: _gamesFiltered[0].lastPlayed !=
+                                    DateTime.fromMillisecondsSinceEpoch(0),
+                                child: Text('Date'),
+                                onTap: () {
+                                  _sortItems('Date');
                                 },
                               ),
                             ],

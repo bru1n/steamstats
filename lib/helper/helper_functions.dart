@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
-void displayMessageToUser(String message, BuildContext context, {int duration = 1000}) {
+void displayMessageToUser(String message, BuildContext context, {int duration = 3000}) {
   SchedulerBinding.instance.addPostFrameCallback(
     (_) {
       ScaffoldMessenger.of(context).showSnackBar(

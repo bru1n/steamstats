@@ -41,7 +41,7 @@ You can try SteamStats in two ways:
       ```
 
 2. **Download APK**
-   - [Download the latest release](link)  
+   - [Download the latest release](https://github.com/bru1n/steamstats/releases/latest)
    - Install it on your Android device
 
 ## 📌 Notes
